@@ -22,13 +22,9 @@ export default function Home() {
                  animate={{ opacity: 1, x: 0 }}
                  transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
               >
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-xs font-semibold uppercase tracking-widest text-rose-300 mb-6 font-sans">
-                  <span className="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></span>
-                  Based in Cyberspace
-                </div>
                 <h1 className="text-[12vw] lg:text-[7.5vw] leading-[0.85] tracking-tight font-display font-bold text-white uppercase drop-shadow-lg flex flex-col">
                   <span><ScrambleText text="Ahmed" delay={0.2} duration={1.2} /></span>
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 via-rose-300 to-purple-400">
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-neutral-200 via-violet-300 to-pink-400">
                     <ScrambleText text="Barkat" delay={0.6} duration={1.2} />
                   </span>
                 </h1>
@@ -40,9 +36,9 @@ export default function Home() {
                 transition={{ duration: 1, delay: 0.3 }}
                 className="max-w-xl"
               >
-                <h2 className="text-xl md:text-3xl font-display font-medium text-white mb-4">Creative Developer & UI/UX Expert</h2>
+                <h2 className="text-xl md:text-3xl font-display font-medium text-white mb-4">Web Developer & Designer</h2>
                 <p className="text-base md:text-lg text-neutral-400 font-sans font-light">
-                  I craft award-winning web platforms, bridging the gap between cutting-edge engineering and immersive visual design to deliver striking business results.
+                  I build fast, clean websites for businesses that want to look serious online.
                 </p>
               </motion.div>
               
@@ -52,7 +48,7 @@ export default function Home() {
                  transition={{ duration: 1, delay: 0.5 }}
                  className="flex flex-wrap gap-4 items-center mt-4"
               >
-                <Link to="/work" className="px-8 py-4 bg-white text-black rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-2 hover:bg-rose-100 transition-colors font-sans">
+                <Link to="/work" className="px-8 py-4 bg-white text-black rounded-full font-bold uppercase tracking-widest text-sm flex items-center gap-2 hover:bg-violet-100 transition-colors font-sans">
                   View Projects <ArrowRight size={18} />
                 </Link>
                 <Link to="/contact" className="px-8 py-4 border border-neutral-700 text-white rounded-full font-bold uppercase tracking-widest text-sm hover:border-white transition-colors font-sans">
@@ -83,17 +79,6 @@ export default function Home() {
               >
                   <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea36f?q=80&w=2604&auto=format&fit=crop" alt="Project 2" className="w-full h-full object-cover grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-700" />
               </motion.div>
-
-              {/* Floating element */}
-              <motion.div
-                 initial={{ opacity: 0, scale: 0 }}
-                 animate={{ opacity: 1, scale: 1 }}
-                 transition={{ duration: 0.8, delay: 1, type: "spring" }}
-                 className="absolute top-[45%] text-center left-[-15%] z-30 bg-neutral-950 border border-neutral-700 p-6 rounded-full shadow-xl flex flex-col items-center justify-center w-36 h-36 backdrop-blur-md"
-              >
-                 <span className="text-4xl font-display font-bold text-white mb-1">AW</span>
-                 <span className="text-[10px] uppercase font-bold text-rose-400 tracking-widest text-center font-sans">Awwwards<br/>Winner</span>
-              </motion.div>
            </div>
         </div>
 
@@ -110,18 +95,18 @@ export default function Home() {
       </section>
 
       {/* Endless Marquee banner */}
-      <section className="py-4 md:py-6 bg-gradient-to-r from-rose-600 via-purple-600 to-indigo-600 text-white overflow-hidden flex whitespace-nowrap shadow-[0_0_80px_rgba(225,29,72,0.15)] relative z-30">
+      <section className="py-4 md:py-6 bg-gradient-to-r from-violet-600 via-violet-500 to-pink-500 text-white overflow-hidden flex whitespace-nowrap shadow-[0_0_80px_rgba(139,92,246,0.15)] relative z-30">
         <motion.div 
           animate={{ x: [0, -1000] }}
           transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
           className="flex gap-8 md:gap-16 items-center text-xl md:text-3xl uppercase tracking-widest font-display font-bold"
         >
-          <span>Awwwards Winning</span> <Star size={20} className="opacity-50" />
-          <span>FWA of the Day</span> <Star size={20} className="opacity-50" />
-          <span>Webby Nominee</span> <Star size={20} className="opacity-50" />
-          <span>CSS Design Awards</span> <Star size={20} className="opacity-50" />
-          <span>Awwwards Winning</span> <Star size={20} className="opacity-50" />
-          <span>FWA of the Day</span> <Star size={20} className="opacity-50" />
+          <span>Available for Projects</span> <span className="w-2 h-2 rounded-full bg-pink-500"></span>
+          <span>Web Design</span> <span className="w-2 h-2 rounded-full bg-pink-500"></span>
+          <span>React & TypeScript</span> <span className="w-2 h-2 rounded-full bg-pink-500"></span>
+          <span>Malaysia & Pakistan</span> <span className="w-2 h-2 rounded-full bg-pink-500"></span>
+          <span>Fast Delivery</span> <span className="w-2 h-2 rounded-full bg-pink-500"></span>
+          <span>Available for Projects</span> <span className="w-2 h-2 rounded-full bg-pink-500"></span>
         </motion.div>
       </section>
 
@@ -136,7 +121,7 @@ export default function Home() {
              className="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-neutral-800 pb-8"
           >
             <h2 className="text-4xl md:text-5xl font-display font-medium uppercase tracking-tight text-white flex items-center gap-4">
-              <span className="text-rose-500">01 //</span> The Arsenal
+              <span className="text-violet-500">01 //</span> The Arsenal
             </h2>
             <p className="text-neutral-400 font-sans font-light max-w-sm">Combining robust traditional engineering with the bleeding edge of creative technology.</p>
           </motion.div>
@@ -146,8 +131,7 @@ export default function Home() {
                whileHover={{ y: -10 }}
                className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl flex flex-col gap-24 relative overflow-hidden group"
             >
-               <div className="absolute top-0 right-0 w-32 h-32 bg-rose-500/10 blur-[50px] group-hover:bg-rose-500/20 transition-colors" />
-               <h3 className="text-2xl font-display font-bold text-white relative z-10 w-1/2">Frontend Architecture</h3>
+               <div className="absolute top-0 right-0 w-32 h-32 bg-violet-500/10 blur-[50px] group-hover:bg-violet-500/20 transition-colors" />
                <div className="flex flex-wrap gap-2 relative z-10">
                  {['React', 'Next.js', 'TypeScript', 'Tailwind'].map(tech => (
                    <span key={tech} className="px-3 py-1 bg-neutral-950 border border-neutral-700 rounded-full text-xs font-sans text-neutral-300">{tech}</span>
@@ -159,8 +143,7 @@ export default function Home() {
                whileHover={{ y: -10 }}
                className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl flex flex-col gap-24 relative overflow-hidden group"
             >
-               <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/10 blur-[50px] group-hover:bg-purple-500/20 transition-colors" />
-               <h3 className="text-2xl font-display font-bold text-white relative z-10 w-1/2">Creative Motion</h3>
+               <div className="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 blur-[50px] group-hover:bg-pink-500/20 transition-colors" />
                <div className="flex flex-wrap gap-2 relative z-10">
                  {['Framer Motion', 'GSAP', 'Lenis', 'Lottie'].map(tech => (
                    <span key={tech} className="px-3 py-1 bg-neutral-950 border border-neutral-700 rounded-full text-xs font-sans text-neutral-300">{tech}</span>
@@ -172,8 +155,7 @@ export default function Home() {
                whileHover={{ y: -10 }}
                className="bg-neutral-900 border border-neutral-800 p-8 rounded-2xl flex flex-col gap-24 relative overflow-hidden group"
             >
-               <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 blur-[50px] group-hover:bg-indigo-500/20 transition-colors" />
-               <h3 className="text-2xl font-display font-bold text-white relative z-10 w-1/2">WebGL & 3D</h3>
+               <div className="absolute top-0 right-0 w-32 h-32 bg-pink-500/10 blur-[50px] group-hover:bg-pink-500/20 transition-colors" />
                <div className="flex flex-wrap gap-2 relative z-10">
                  {['Three.js', 'React Three Fiber', 'GLSL', 'Shaders'].map(tech => (
                    <span key={tech} className="px-3 py-1 bg-neutral-950 border border-neutral-700 rounded-full text-xs font-sans text-neutral-300">{tech}</span>
@@ -194,10 +176,10 @@ export default function Home() {
           className="max-w-5xl text-center"
         >
           <h2 className="text-3xl md:text-5xl lg:text-7xl font-sans font-light tracking-tight leading-tight text-neutral-300">
-            We don't just build websites. We architect <span className="italic font-medium text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">digital destinations</span> that captivate, convert, and leave a permanent mark on the web.
+            We don't just build websites. We architect <span className="italic font-medium text-white">digital destinations</span> that captivate, convert, and leave a permanent mark on the web.
           </h2>
           <div className="mt-16">
-            <Link to="/expertise" className="inline-flex items-center gap-2 text-rose-400 hover:text-white uppercase tracking-widest font-sans font-semibold transition-colors border-b border-rose-500/30 hover:border-white pb-1">
+            <Link to="/expertise" className="inline-flex items-center gap-2 text-violet-400 hover:text-white uppercase tracking-widest font-sans font-semibold transition-colors border-b border-violet-500/30 hover:border-white pb-1">
               Explore Our Expertise <ArrowRight size={16} />
             </Link>
           </div>
@@ -206,7 +188,7 @@ export default function Home() {
 
       {/* Signature Approach Section - Uniqueness Factor */}
       <section className="py-24 md:py-32 px-6 md:px-12 bg-neutral-900 border-y border-neutral-800 relative overflow-hidden">
-        <div className="absolute top-1/2 left-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_left,rgba(225,29,72,0.08)_0%,rgba(0,0,0,0)_70%)] pointer-events-none -translate-y-1/2" />
+        <div className="absolute top-1/2 left-0 w-1/2 h-full bg-[radial-gradient(ellipse_at_left,rgba(139,92,246,0.08)_0%,rgba(0,0,0,0)_70%)] pointer-events-none -translate-y-1/2" />
         
         <div className="max-w-7xl mx-auto relative z-10 flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
           <div className="w-full lg:w-1/2">
@@ -221,10 +203,10 @@ export default function Home() {
               <motion.div 
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="w-64 h-64 border border-rose-500/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-700"
+                className="w-64 h-64 border border-violet-500/30 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-700"
               >
-                <div className="w-48 h-48 border border-purple-500/30 rounded-full flex items-center justify-center -rotate-45">
-                  <div className="w-32 h-32 border border-indigo-500/30 rounded-full flex items-center justify-center rotate-90">
+                <div className="w-48 h-48 border border-pink-500/30 rounded-full flex items-center justify-center -rotate-45">
+                  <div className="w-32 h-32 border border-pink-500/30 rounded-full flex items-center justify-center rotate-90">
                      <span className="text-white text-xs uppercase tracking-[0.3em] font-bold">Unreleased Lab</span>
                   </div>
                 </div>
@@ -243,7 +225,7 @@ export default function Home() {
                transition={{ duration: 0.6 }}
                className="text-4xl md:text-6xl font-display font-medium tracking-tight mb-8 uppercase"
              >
-               THE <span className="italic text-rose-400">SIGNATURE</span> EDGE.
+               THE <span className="italic text-violet-400">SIGNATURE</span> EDGE.
              </motion.h2>
              
              <motion.div 
@@ -257,11 +239,11 @@ export default function Home() {
                  While others rely on templates and off-the-shelf components, I engineer bespoke digital environments from the ground up. My approach merges cognitive psychology with advanced frontend architecture.
                </p>
                <div className="flex flex-col gap-6">
-                 <div className="flex flex-col border-l-2 border-rose-500/50 pl-6">
+                 <div className="flex flex-col border-l-2 border-violet-500/50 pl-6">
                    <h4 className="text-white font-sans font-medium text-xl mb-2">Zero-Compromise Performance</h4>
                    <p className="text-sm">I obsess over 60fps animations and micro-interactions. Every transition is physically modeled, every frame optimized.</p>
                  </div>
-                 <div className="flex flex-col border-l-2 border-purple-500/50 pl-6">
+                 <div className="flex flex-col border-l-2 border-pink-500/50 pl-6">
                    <h4 className="text-white font-sans font-medium text-xl mb-2">Immersive Narrative</h4>
                    <p className="text-sm">Websites shouldn't just be read; they should be experienced. I use kinetic typography and WebGL to tell your brand's story.</p>
                  </div>

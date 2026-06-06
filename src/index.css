@@ -25,11 +25,11 @@
 }
 
 @keyframes rgb-split {
-  0% { text-shadow: 2px 0 0 rgba(255,0,0,0.8), -2px 0 0 rgba(0,0,255,0.8); }
-  25% { text-shadow: -2px 0 0 rgba(255,0,0,0.8), 2px 0 0 rgba(0,0,255,0.8); }
-  50% { text-shadow: 2px -2px 0 rgba(255,0,0,0.8), -2px 2px 0 rgba(0,0,255,0.8); }
-  75% { text-shadow: -2px -2px 0 rgba(255,0,0,0.8), 2px 2px 0 rgba(0,0,255,0.8); }
-  100% { text-shadow: 2px 2px 0 rgba(255,0,0,0.8), -2px -2px 0 rgba(0,0,255,0.8); }
+  0% { text-shadow: 2px 0 0 rgba(139,92,246,0.8), -2px 0 0 rgba(236,72,153,0.8); }
+  25% { text-shadow: -2px 0 0 rgba(139,92,246,0.8), 2px 0 0 rgba(236,72,153,0.8); }
+  50% { text-shadow: 2px -2px 0 rgba(139,92,246,0.8), -2px 2px 0 rgba(236,72,153,0.8); }
+  75% { text-shadow: -2px -2px 0 rgba(139,92,246,0.8), 2px 2px 0 rgba(236,72,153,0.8); }
+  100% { text-shadow: 2px 2px 0 rgba(139,92,246,0.8), -2px -2px 0 rgba(236,72,153,0.8); }
 }
 
 .hide-scrollbar::-webkit-scrollbar {

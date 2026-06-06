@@ -23,11 +23,11 @@ export default function LocalTime() {
   return (
     <div className="flex flex-col gap-1 items-end md:items-start text-xs font-sans uppercase font-bold tracking-widest text-neutral-400">
       <div className="flex items-center gap-2">
-        <span className={`w-2 h-2 rounded-full ${isSleeping ? 'bg-indigo-500' : 'bg-green-500'} animate-pulse`} />
+        <span className={`w-2 h-2 rounded-full ${isSleeping ? 'bg-violet-500' : 'bg-green-500'} animate-pulse`} />
         <span>{isSleeping ? 'Offline / Sleeping' : 'Online / Available'}</span>
       </div>
       <div className="text-white">
-        {formatter.format(time)} — LOC
+        {formatter.format(time)} — MYT +8
       </div>
     </div>
   );

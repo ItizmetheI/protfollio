@@ -10,7 +10,7 @@ export default function Contact() {
     <PageTransition className="pt-32 pb-0 px-6 md:px-12 relative z-10 flex flex-col min-h-[100svh] bg-neutral-950">
       
       {/* Background glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-rose-600/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-violet-600/10 rounded-full blur-[120px] mix-blend-screen pointer-events-none" />
 
       <div className="max-w-7xl mx-auto w-full flex flex-col relative z-10">
         
@@ -28,7 +28,7 @@ export default function Contact() {
               className="text-[12vw] md:text-[8vw] font-display font-medium tracking-tighter leading-[0.85] uppercase rgb-hover mb-12"
             >
               START A <br />
-              <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-purple-500">PROJECT</span>
+              <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-500">PROJECT</span>
             </motion.h1>
 
             <motion.div
@@ -37,10 +37,11 @@ export default function Contact() {
                transition={{ duration: 0.5, delay: 0.4 }}
             >
                <Magnetic strength={0.2}>
-                  <a href="mailto:hello@studio.com" className="group relative inline-flex items-center justify-center overflow-hidden rounded-full p-1 bg-gradient-to-r from-rose-500 to-purple-600">
+                  {/* TODO: replace with real email */}
+                  <a href="mailto:hello@ahmedbarkat.com" className="group relative inline-flex items-center justify-center overflow-hidden rounded-full p-1 bg-gradient-to-r from-violet-500 to-pink-600">
                     <span className="absolute inset-0 bg-neutral-950 rounded-full group-hover:bg-opacity-0 transition-opacity duration-300" />
                     <span className="relative flex items-center justify-center gap-4 px-12 py-6 bg-transparent text-white text-xl md:text-3xl font-display font-bold tracking-tight">
-                      <Mail size={28} /> <ScrambleText text="hello@studio.com" delay={0.8} />
+                      <Mail size={28} /> <ScrambleText text="hello@ahmedbarkat.com" delay={0.8} />
                     </span>
                   </a>
                </Magnetic>
@@ -62,16 +63,16 @@ export default function Contact() {
           <div className="flex flex-col gap-2 md:items-center">
             <h4 className="text-white font-display font-medium uppercase tracking-widest text-sm mb-4 w-full md:text-center">Social</h4>
             <div className="flex gap-6 w-full md:justify-center">
-               <Magnetic><a href="#" className="hover:text-rose-400 transition-colors"><Twitter size={24} /></a></Magnetic>
-               <Magnetic><a href="#" className="hover:text-rose-400 transition-colors"><Linkedin size={24} /></a></Magnetic>
-               <Magnetic><a href="#" className="hover:text-rose-400 transition-colors"><Github size={24} /></a></Magnetic>
+               <Magnetic><a href="#" className="hover:text-violet-400 transition-colors"><Twitter size={24} /></a></Magnetic>
+               <Magnetic><a href="#" className="hover:text-violet-400 transition-colors"><Linkedin size={24} /></a></Magnetic>
+               <Magnetic><a href="#" className="hover:text-violet-400 transition-colors"><Github size={24} /></a></Magnetic>
             </div>
           </div>
 
           <div className="flex flex-col gap-2 md:items-end text-sm">
             <h4 className="text-white font-display font-medium uppercase tracking-widest text-sm mb-4 md:text-right w-full">Legal</h4>
-            <p>© {new Date().getFullYear()} STUDIO CRAFT</p>
-            <p>ALL RIGHTS RESERVED.</p>
+            <p>© {new Date().getFullYear()} AHMED BARKAT</p>
+            <p>KUALA LUMPUR, MY</p>
           </div>
 
         </div>

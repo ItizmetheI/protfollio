@@ -22,7 +22,7 @@ export default function Navigation() {
           onClick={() => setIsMenuOpen(false)}
           className="text-lg font-medium tracking-tighter"
         >
-          STUDIO<span className="opacity-50">©</span>
+          AB<span className="opacity-50">©</span>
         </Link>
 
         <div className="hidden md:flex gap-8 text-sm uppercase tracking-widest font-medium">
@@ -30,7 +30,7 @@ export default function Navigation() {
             <Link 
               key={link.path} 
               to={link.path} 
-              className={`transition-colors ${location.pathname === link.path ? 'text-rose-400' : 'hover:text-rose-300'}`}
+              className={`transition-colors ${location.pathname === link.path ? 'text-violet-400' : 'hover:text-violet-300 text-neutral-400'}`}
             >
               {link.name}
             </Link>
@@ -70,7 +70,7 @@ export default function Navigation() {
                  key={link.path} 
                  to={link.path} 
                  onClick={() => setIsMenuOpen(false)} 
-                 className={`transition-all hover:italic hover:text-rose-400 ${location.pathname === link.path ? 'text-rose-500 italic' : 'text-white'}`}
+                 className={`transition-all hover:italic hover:text-violet-400 ${location.pathname === link.path ? 'text-violet-500 italic' : 'text-neutral-400'}`}
                >
                  {link.name}
                </Link>

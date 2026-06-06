@@ -5,7 +5,7 @@ export default function PageTransition({ children, className = "" }: { children:
   return (
     <>
       <motion.div
-        className="fixed inset-0 z-[100] bg-rose-600 origin-top pointer-events-none"
+        className="fixed inset-0 z-[100] bg-violet-600 origin-top pointer-events-none"
         initial={{ scaleY: 1 }}
         animate={{ scaleY: 0 }}
         exit={{ scaleY: 1 }}

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'motion/react';
 export default function EasterEgg() {
   const [isActive, setIsActive] = useState(false);
   const [keys, setKeys] = useState<string[]>([]);
-  const secretCode = ['a', 'u', 'r', 'a'];
+  const secretCode = ['a', 'b'];
 
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -44,7 +44,7 @@ export default function EasterEgg() {
              transition={{ duration: 0.5, repeat: Infinity }}
              className="text-[20vw] font-display font-bold text-white uppercase tracking-tighter drop-shadow-[0_0_100px_white]"
            >
-             AURA
+             AB
            </motion.div>
         </motion.div>
       )}

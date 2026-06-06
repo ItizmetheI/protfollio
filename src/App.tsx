@@ -72,11 +72,11 @@ export default function App() {
       
       {/* Dynamic Ambient Cursor Glow */}
       <motion.div 
-        className="pointer-events-none fixed left-0 top-0 z-0 h-[600px] w-[600px] rounded-full bg-gradient-to-r from-rose-500/10 to-purple-500/10 blur-[120px] hidden lg:block"
+        className="pointer-events-none fixed left-0 top-0 z-0 h-[600px] w-[600px] rounded-full bg-gradient-to-r from-violet-500/10 to-pink-500/10 blur-[120px] hidden lg:block"
         style={{ x: smoothX, y: smoothY, willChange: "transform" }}
       />
       
-      <div className="min-h-screen bg-neutral-950 selection:bg-rose-500 selection:text-white relative z-10 w-full overflow-hidden">
+      <div className="min-h-screen bg-neutral-950 selection:bg-violet-500 selection:text-white relative z-10 w-full overflow-hidden">
         <Navigation />
         <AnimatedRoutes />
       </div>
