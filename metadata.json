@@ -1,0 +1,8 @@
+{
+  "name": "Modern Showcase Portfolio",
+  "description": "An award-winning style web development portfolio featuring smooth animations and a premium dark design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
